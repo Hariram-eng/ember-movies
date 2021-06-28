@@ -1,0 +1,186 @@
+img{
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+
+.list{
+    background-color: #d7d7d9;
+    width: 40%;
+    cursor: pointer;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    position: relative;
+}
+
+h2{
+    position: absolute;
+    left: 23%;
+    font-family: sans-serif;
+}
+h3{
+    position: absolute;
+    left: 23%;
+    top: 32%;
+    font-family: sans-serif;
+}
+h4{
+    position: absolute;
+    font-family: sans-serif;
+    left: 23%;
+    top: 49%;
+}
+
+.details{
+    background-color: #d7d7d9;
+    height: 80vh;
+    width: 46%;
+    position: absolute;
+    left: 46%;
+    top: 14%;
+    border-radius:10px;
+    display: none;
+    position: fixed;
+
+}
+.storedetails{
+    background-color: #d7d7d9;
+    height: 80vh;
+    width: 46%;
+    position: absolute;
+    left: 46%;
+    top: 14%;
+    border-radius:10px;
+    display: none;
+    position: fixed;
+    overflow: scroll;   
+    /* overflow-y: hidden;  */
+    overflow-x: hidden; 
+
+}
+.storedetails::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.storedetails {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.storedetailsDiv{
+    height: 28%;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    background-color: #ccc8c8;
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    
+}
+.storedetailsDiv > img{
+    height: 180px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.storeTitle{
+    position: absolute;
+    top: 10%;
+    left: 29%;
+}
+.expandimage{
+    height: 45%;
+    width: 45%;
+    margin-left: 28%;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+
+.title{
+    color: red;
+    position: absolute;
+}
+.overview{
+    color: red;
+    position: absolute; 
+    top: 55%;
+}
+
+.review{
+    position: absolute;
+    height: 20%;
+    width: 50%;
+    top: 70%;
+    outline: none;
+    border-radius: 10px;
+    border:none;
+    left: 22%;
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+.overview{
+    color:black;
+    position: absolute;
+    left: 23%;
+    top: 75%;
+
+}
+.movieoverview{
+    color:black;
+    position: absolute;
+    left: 23%;
+    top: 60%;
+    color: black;
+
+}
+
+.submitbutton{
+    position: absolute;
+    height: 5%;
+    width: 10%;
+    color: white;
+    background-color: #fa5c5c;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    top: 84.5%;
+    left: 79%;
+    cursor: pointer;
+}
+.favorites{
+    
+    height: 6vh;
+    width: 6vh;
+    position: fixed;
+    left: 94%;
+    top: 4%;
+    cursor: pointer;
+    background-size: 100% 100%;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url('/assests/Images/fav.jpg');
+}
+
+
+.deletebutton{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    height: 3vh;
+    width: 8vh;
+    outline: none;
+    top: 83%;
+    right: 2%;
+    cursor: pointer;
+}
