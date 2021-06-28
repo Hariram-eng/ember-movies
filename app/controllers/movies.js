@@ -93,6 +93,7 @@ export default class MoviesController extends Controller {
     get getFavaoritesMovies(){
         document.getElementsByClassName('storedetails')[0].style.display='block';
         document.getElementsByClassName('details')[0].style.display='none';  
+        
         return this.store.findAll('fav-movie');
 
     }
