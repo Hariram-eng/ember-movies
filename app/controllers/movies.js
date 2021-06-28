@@ -4,6 +4,12 @@ import { action , computed } from "@ember/object";
 import {inject as service } from '@ember/service';
 
 export default class MoviesController extends Controller {
+
+
+    @action
+    callMe(){
+        alert('Parent called');
+    }
     @service
     store
 
@@ -92,10 +98,8 @@ export default class MoviesController extends Controller {
     @computed
     get getFavaoritesMovies(){
         document.getElementsByClassName('storedetails')[0].style.display='block';
-        document.getElementsByClassName('details')[0].style.display='none';  
-        
+        document.getElementsByClassName('details')[0].style.display='none';          
         return this.store.findAll('fav-movie');
-
     }
 
     @action
