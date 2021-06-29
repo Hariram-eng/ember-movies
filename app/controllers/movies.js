@@ -5,11 +5,6 @@ import {inject as service } from '@ember/service';
 
 export default class MoviesController extends Controller {
 
-
-    @action
-    callMe(){
-        alert('Parent called');
-    }
     @service
     store
 
@@ -51,6 +46,7 @@ export default class MoviesController extends Controller {
 
 
     displayStoreMovies=(e)=>{
+        console.log('hi')
         let index=e.path[0].children[5].value;
         let parent=document.getElementsByClassName('details')[0];
         parent.style.display='block';

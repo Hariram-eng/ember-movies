@@ -1,8 +1,10 @@
 {{page-title "Movies"}}
     {{this.getRandomMovies}}
-   <LinkTo @route='movies'  @model='/'>
+
+   <LinkTo @route='movies'>
             <div class="favorites" {{on "click" this.myFavorites}}></div>
     </LinkTo>
+
     <div class="details">
         <img src="" alt="" class="expandimage">
         <h2 class="title">Title -   </h2>
@@ -11,18 +13,24 @@
         <button class="submitbutton" {{on "click" this.saveRecord}}>Submit</button>
         <param>
     </div>
+
+
+
     <div class="storedetails">
-        {{#each this.getFavaoritesMovies as |movie|}}     
-            <LinkTo @route='movies' @model={{movie.id}}>
-                <div class="storedetailsDiv" onclick={{fn this.storeMovieDetails}}>
+        {{#each this.getFavaoritesMovies as |movie|}}  
+            <LinkTo @route='movies.movies' @model={{movie.id}}>
+                <div class="storedetailsDiv">
                     <img src={{movie.Image}} alt="">
                     <h3 class="storetitle">{{movie.title}}</h3>
-                    <button value={{movie.id}} {{on "click" this.deleteStoreRecord}} class="deletebutton">Delete</button>
                     <param value={{movie.id}}>
                 </div> 
             </LinkTo>
+            <button value={{movie.id}} {{on "click" this.deleteStoreRecord}} class="deletebutton">Delete</button>
         {{/each}}       
     </div>
+
+
+
     {{#each this.randomMoviesArray as |movie|}}
         <div class="list" {{on "click" this.displayStoreMovies}} >
             <h2>Title -- {{movie.title}}</h2>
@@ -34,6 +42,6 @@
             </marquee>   
             <param  value={{movie.index}}>       
         </div> 
-    {{/each}}     
+    {{/each}}  
 
 {{outlet}}

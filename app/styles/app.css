@@ -42,7 +42,6 @@ h4{
     left: 46%;
     top: 14%;
     border-radius:10px;
-    display: none;
     position: fixed;
 
 }
@@ -54,7 +53,6 @@ h4{
     left: 46%;
     top: 14%;
     border-radius:10px;
-    display: none;
     position: fixed;
     overflow: scroll;
     overflow-x: hidden; 
@@ -173,12 +171,11 @@ h4{
     background-color: red;
     border-radius: 5px;
     border: none;
-    position: absolute;
     height: 3vh;
     width: 8vh;
     outline: none;
-    top: 83%;
-    right: 2%;
+    margin-left: 80%;
+    margin-top: 2%;
     cursor: pointer;
 }
 
@@ -187,4 +184,10 @@ div{
     height: 400px;
     width: 400px;
     background-color: #cccccc;
+}
+
+.parent{
+    height: 90%;
+    width:90%;
+    background-color: #a3a29e;
 } */
