@@ -27,9 +27,9 @@
 
 
 
-/config
-/test
-/vendor
+/config/
+/test/
+/vendor/
 /.editorconfig
 /.ember-cli
 /.eslintrc.js
@@ -45,5 +45,5 @@
 /README.md
 /testem.js
 
-/app/helpers
-/app/components
+/app/helpers/
+/app/components/
